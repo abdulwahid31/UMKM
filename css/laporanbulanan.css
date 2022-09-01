@@ -1,0 +1,323 @@
+/* colors
+ #ED1C5B; light 
+ #E20E4E; dark
+*/
+
+/* reset */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+}
+
+/* wrapper atau menu atas */
+
+.wrapper{ 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .wrapper .navbar{
+    background: #fff;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0px 1px 5px gray;
+    justify-content: space-between;
+  }
+
+.wrapper .navbar .left{
+    display: flex;
+    background: #2756b2;
+    width: 200px;
+    height: 100%;
+    box-shadow: 0px 1px 5px #205eda;
+    text-align: center;
+    justify-content: center;
+}
+
+.wrapper .navbar .left .logo{
+    width: 85%;
+}
+
+.wrapper .navbar .right{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-right: 50px;
+}
+
+#usericon{
+  width:40px;
+  height:40px;
+   border-radius: 50%;
+    margin: 0px 10px;
+    object-fit: cover;
+    object-position: top;
+    border: 1px solid grey;
+}
+
+.wrapper .navbar ul li {
+    align-content: left;
+    list-style: none;
+    color: grey;
+}
+
+.wrapper .navbar ul li a:hover {
+ color: #000000;
+}
+
+.wrapper .navbar ul li a{
+  color: gray;
+  }
+
+  .wrapper .navbar .right ul li a{
+    display: flex;
+    align-items: center;
+    height: auto;
+  }
+  
+  
+
+  .wrapper .navbar .right a{
+    text-align: right;
+  }
+  
+  .wrapper .navbar .right a span{
+    font-size: 15px;
+  }
+  
+  .wrapper .navbar .right ul li{
+    position: relative;
+  }
+  
+  .wrapper .navbar .right ul li .dropdown{
+    position: absolute;
+    top: 60px;
+    width: 130px;
+    right: 0;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    padding: 10px px;
+    box-shadow: 1px 1px 3px gray;
+    border-radius: 7px;
+    display: none;
+  }
+  
+  #textprofile{
+    margin-left: 5px;
+    color: #000000;
+  }
+
+  #textsignout{
+    margin-left: 5px;
+    color: #000000;
+  }
+
+  .wrapper .navbar .right ul li .dropdown ul li a{
+    padding: 10px 20px;
+    border-radius: 7px;
+    color: #000000;
+  }
+
+  #profilebox{
+  box-shadow: 0 1px 3px -2px gray;
+
+}
+
+#profilebox:hover{
+  font-weight: bold;
+  border-radius: 7px;
+    box-shadow: 0.5px 0.5px 5px rgb(173, 173, 173);
+    transition: 0.4s;
+}
+  .wrapper .navbar .right ul li .dropdown ul li a:hover{
+    font-weight: bold;
+    color: #000000;
+    box-shadow: 0.5px 0.5px 5px rgb(173, 173, 173);
+    transition: 0.4s;
+  }
+
+  
+  .wrapper .navbar .right ul li .dropdown .fas{
+    margin-right: 10px;
+  }
+  
+  .wrapper .navbar .right ul li .dropdown:before{
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(70%);
+    border: 10px solid;
+    border-color: transparent transparent rgb(255, 255, 255) transparent;
+  
+}
+
+  
+  .wrapper .navbar .right ul li.active .dropdown{
+    display: block;
+    transition: 0.4s;
+}
+
+
+  .wrapper .navbar .right ul li.active a #dropicon {
+    color: #000000;
+    transform: rotate(-180deg);
+  }
+
+/* Sidebar atau menu samping  */
+  .sidebar{
+    position: fixed;
+    background: #2756b2;
+    width: 200px;
+    height: 100%;
+    padding: 75px 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.sidebar i {
+  margin-right: 5px;
+}
+
+.sidebar ul li a {
+    display: flex;
+    height: 40px;
+    width: auto;
+    margin: 15px 10px;
+    align-items: center;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 0 20px;
+}
+
+.sidebar ul li a.active, .sidebar ul li a:hover {
+    display: flex;
+    background-color: #899CC4;
+    color: #ffffff;
+    align-items: center;
+    border-radius: 5px;
+    padding-left: 27px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+/* Main Content atau menu utama  */
+
+.main {
+    width: 100%;
+    height: 100%;
+    padding-top: 105px;
+    padding-left: 200px;
+}
+
+.main h1{
+
+    color: #000000;
+    font-weight: bold;
+    font-size: 30px;
+    font-style: Poppins;
+    text-align: center;
+}
+
+.main h2{
+  font-size: 20px;
+  text-align: center;
+}
+.main .container{
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.info .judul{
+  margin: 20px 0;
+  font-size: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.judul th{
+  width: 200px;
+  text-align: justify;
+  font-size: 15px;
+}
+.judul td{
+  text-align: justify;
+  font-size: 15px;
+}
+
+
+.main .container .data table{
+    border-collapse: collapse;
+    margin: 25px auto;
+    font-size: 15px;
+    width: auto;
+    overflow: hidden;
+}
+
+.main .container .data table thead tr{
+  background-color: #748CCC;
+  color:#ffffff;
+  text-align: left;
+}
+
+.main .container .data table th,
+.main .container .data table td{
+  padding: 10px 20px;
+  font-size: 12px;
+  border: .1px solid #becaec;
+}
+
+#th1{
+  width: 20px;
+}
+
+#th2{
+  width: 200px;
+ }
+
+#th3{
+  width: 120px;
+}
+
+#th4{
+  width: 100px;
+ }
+
+ #th5{
+  width: 50px;
+ }
+
+ #th6{
+  width: 150px;
+ }
+
+.main .container .data table tbody tr{
+  border-bottom: 1px solid #dddddd;
+  background-color: #ffffff;
+}
+
+#statuswarna{
+  font-size: 10px;
+  margin-right: 7px;
+}
+
+.main .container .data table tbody tr:nth-of-type(even){
+  background-color: #f3f3f3;
+}
+
+.main .container .data table tbody tr:last-of-type{
+ border-bottom:0;
+}
